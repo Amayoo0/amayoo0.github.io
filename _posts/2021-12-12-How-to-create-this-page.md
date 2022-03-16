@@ -10,6 +10,8 @@ _(Remeber to do Fork of repository to help the comunity)_
 * [Neumorphism](https://github.com/longpdo/neumorphism).
 * [Alembic](https://github.com/daviddarnes/alembic).
 
+<!-- more -->
+
 ### Second steps
 Second step is change the name of the repository: Go to the `settings` and then give the name you want ending with `<your-name>.github.io`
 
