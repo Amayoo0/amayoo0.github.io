@@ -2,7 +2,6 @@
 title: How to create this page
 published: true
 ---
-Guide of how to create your web site.
 ### First steps
 First step is create your **own acount** on [GitHub](https://github.com/). Then visit the style you want to use and
 _(Remeber to do Fork of repository to help the comunity)_
