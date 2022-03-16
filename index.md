@@ -7,7 +7,7 @@ feature_text: |
 feature_image: "https://picsum.photos/1300/400?image=989"
 excerpt: ""
 ---
-### Resume
+
 Hi, I am Antonio Mayo. I am currently finishing my bachelor's degree on Telecomunication engineering at University of Málaga.
 
 During my career I have been acquiring experience with a wide variaty of programming languages such as C, C++, Java, Python, Matlab, VHDL... and others that I have learnt for myself like GIT, PHP, HTML, CSS... 
