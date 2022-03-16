@@ -38,11 +38,11 @@ plugins:
 paginate: 2 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
-twitter:
-  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
-author: DavidDarnes # jekyll-seo-tag > default author
+facebook:
+  username: AntonioMayo # jekyll-seo-tag > Owners twitter username
+author: Antonio Mayo # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
-  name: David Darnes # jekyll-seo-tag > real name
+  name: Antonio Mayo # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
     #- https://twitter.com/DavidDarnes
     - https://www.facebook.com/antonio.mayovegas.16/
@@ -98,7 +98,7 @@ logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Pesonal Portfolio" # Site description and default description, also used in jekyll-seo-tag
 url: "" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/daviddarnes/alembic"
+repo: "https://github.com/amayoo0"
 email: "antoniomayov01@gmail.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
