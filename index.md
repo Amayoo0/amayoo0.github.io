@@ -4,7 +4,7 @@ feature_text: |
   ## Personal Portfolio
   In this page you will know Antonio as a profesional! 
   
-feature_image: "https://github.com/Amayoo0/amayoo0.github.io/blob/main/assets/22-1300x400-resize.jpg"
+feature_image: "assets/22-1300x400-resize.jpg"
 excerpt: ""
 ---
 
