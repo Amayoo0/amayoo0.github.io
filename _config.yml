@@ -127,8 +127,8 @@ navigation_header:
 #  url: /elements/
 - title: Blog
   url: /blog/
-#- title: Categories
-#  url: /categories/
+- title: HTB
+  url: /htb/
 #- title: Search
 #  url: /search/
 #- title: Fork Alembic
