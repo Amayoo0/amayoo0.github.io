@@ -1,7 +1,18 @@
 ---
-title: How to create this page
-published: true
+title: Description of a Pot Still
+categories:
+excerpt: |
+First step is create your **own acount** on [GitHub](https://github.com/). Then visit the style you want to use and
+_(Remeber to do Fork of repository to help the comunity)_
+* [Hacker-Blog](http://github.com/tocttou/hacker-blog).
+
+feature_text: |
+  ## How to create this page
+  Fast guide to create a github pages
+feature_image: "https://picsum.photos/2560/600?image=733"
+image: "https://picsum.photos/2560/600?image=733"
 ---
+
 ### First steps
 First step is create your **own acount** on [GitHub](https://github.com/). Then visit the style you want to use and
 _(Remeber to do Fork of repository to help the comunity)_
