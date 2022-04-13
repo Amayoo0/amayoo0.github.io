@@ -1,7 +1,7 @@
-<nav class="nav  nav--categories">
-  <ul class="list  list--categories">
-    {% for item in site.categories %}
-      <li class="item  item--category">
+<nav class="nav  nav--machines">
+  <ul class="list  list--machines">
+    {% for item in site.machines %}
+      <li class="item  item--machines">
         <a href="#{{ item | first | slugify }}">{{ item | first }}</a>
       </li>
     {% endfor %}
