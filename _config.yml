@@ -70,6 +70,14 @@ collections:
       Welcome to the blog
     feature_image: "https://picsum.photos/2560/600?image=866"
 
+  machines:
+    title: Machines # Needed for Siteleaf
+    output: true
+    description: "" # The post list page content
+    feature_text: |
+      Walkthrough of HTB's machines
+    feature_image: "https://picsum.photos/2560/600?image=866"
+
 # 6. Jekyll collections settings
 defaults:
   -
