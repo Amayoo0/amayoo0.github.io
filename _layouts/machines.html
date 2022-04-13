@@ -10,17 +10,24 @@ layout: default
 
     <article class="article  article--page  typeset">
 
-      <h1>{{ page.title }}</h1>
+      {% if paginator.machines %}
+        {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+        <h1>{{ collectiondata.title }}</h1>
+        {{ collectiondata.description | markdownify }}
 
-      {{ content }}
+      {% else %}
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+        
+      {% endif %}
 
     </article>
 
-    {% include post-machines.html %}
+    {% include post-list.html %}
 
   </div>
 
-  {% if page.aside == true %}{% include site-aside.html align="left" %}{% endif %}
+  {% if page.aside == true %}{% include site-aside.html %}{% endif %}
 
 </main>
 
