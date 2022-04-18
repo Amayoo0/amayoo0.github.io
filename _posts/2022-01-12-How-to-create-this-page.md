@@ -26,12 +26,9 @@ Second step is change the name of the repository: Go to the `settings` and then 
 
 #### Local Build
 If you want to see the changes before puching the blog to GitHub, do a local build.
-1. `gem install jekyll`
-1. `gem install jekyll-seo-tag`
-1. `gem install jekyll-paginte`
-1. `gem install jekyl-sitemap`
-1. (`cd` to the blog directory, then:) `jekyll serve --watch --port 8000`
-1. Go to `https://localhost:8000/` in your web browser.
+1. Add `gem "alembic-jekyll-theme"` to your Gemfile to add the theme as a dependancy
+2. Run the command `bundle install` in the root of project to install the theme and its dependancies
+3. Add theme: alembic-jekyll-theme to your _config.yml file to set the site theme
 
 #### Update your local data
 When you have all the local change finished, you can update your web following this steps:
