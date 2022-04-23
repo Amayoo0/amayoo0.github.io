@@ -1,6 +1,6 @@
 ---
 title: How to create this page
-categories:
+categories: pages github
 excerpt: |
   First step is create your **own acount** on [GitHub](https://github.com/). Then visit the style you want to use and _(Remeber to do Fork of repository to help the comunity)_ 
 feature_text: |
@@ -28,7 +28,8 @@ Second step is change the name of the repository: Go to the `settings` and then 
 If you want to see the changes before puching the blog to GitHub, do a local build.
 1. Add `gem "alembic-jekyll-theme"` to your Gemfile to add the theme as a dependancy
 2. Run the command `bundle install` in the root of project to install the theme and its dependancies
-3. Add theme: alembic-jekyll-theme to your _config.yml file to set the site theme
+3. Add theme: alembic-jekyll-theme to your _config.yml_ file to set the site theme
+4. `bundle exec jekyll serve`
 
 #### Update your local data
 When you have all the local change finished, you can update your web following this steps:

@@ -35,7 +35,7 @@ plugins:
 - jemoji
 
 # 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
+paginate: 3 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
 twitter:
@@ -44,7 +44,6 @@ author: Amayoo0 # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
   name: Antonio Mayo # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
-    #- https://twitter.com/DavidDarnes
     - https://www.facebook.com/antonio.mayovegas.16/
     - https://www.linkedin.com/in/antonio-mayo-vegas-6684251a4/
     - https://github.com/amayoo0
@@ -69,14 +68,7 @@ collections:
     feature_text: |
       Welcome to the blog
     feature_image: "https://picsum.photos/2560/600?image=866"
-
-  machines:
-    title: Machines # Needed for Siteleaf
-    output: true
-    description: "" # The post list page content
-    feature_text: |
-      Walkthrough of HTB's machines
-    feature_image: "https://picsum.photos/2560/600?image=866"
+    
 
 # 6. Jekyll collections settings
 defaults:
@@ -84,7 +76,8 @@ defaults:
     scope:
       path: ""
     values:
-      image: "/assets/default-social-image.png" # Default image for sharing
+      image: "/assets/default-social-image.png" # Default image for sharing_links:
+     
   -
     scope:
       path: ""
@@ -106,7 +99,7 @@ logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Pesonal Portfolio" # Site description and default description, also used in jekyll-seo-tag
 url: "" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/daviddarnes/alembic"
+repo: ""
 email: "antoniomayov01@gmail.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
@@ -135,19 +128,17 @@ navigation_header:
 #  url: /elements/
 - title: Blog
   url: /blog/
-- title: HTB
-  url: /htb/
-#- title: Search
-#  url: /search/
-#- title: Fork Alembic
-#  url: https://github.com/daviddarnes/alembic
+- title: Categories
+  url: /categories/
+- title: Search
+  url: /search/
 
 navigation_footer:
 - title: Antonio Mayo Vegas
   url: https://github.com/amayoo0
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
-  #Twitter: https://twitter.com/DavidDarnes
+
   Facebook: https://www.facebook.com/antonio.mayovegas.16/
   LinkedIn: https://www.linkedin.com/in/antonio-mayo-vegas-6684251a4/
   GitHub: https://github.com/amayoo0
