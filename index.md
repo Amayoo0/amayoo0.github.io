@@ -7,6 +7,7 @@ feature_text: |
 feature_image: "assets/22-1300x400-resize.jpg"
 excerpt: ""
 ---
+{% include figure.html image="https://raw.githubusercontent.com/Amayoo0/amayoo0.github.io/main/assets/face.jpeg" position="left" width="90" height="150" %}
 
 Hi, I am Antonio Mayo. I am currently finishing my bachelor's degree on Telecomunication engineering at University of Málaga.
 
