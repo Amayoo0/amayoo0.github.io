@@ -2,14 +2,12 @@
 title: Resume
 feature_text: |
   ## Personal Portfolio
-  In this page you will know Antonio as a profesional! 
+  In this page you will know Antonio as a professional! 
   
 feature_image: "assets/22-1300x400-resize.jpg"
 excerpt: ""
 aside: true 
 ---
-{% include figure.html image="https://raw.githubusercontent.com/Amayoo0/amayoo0.github.io/main/assets/face.jpeg" position="left" width="90" height="150" %}
-
 Hi, I am Antonio Mayo. I am currently finishing my bachelor's degree on Telecomunication engineering at University of Málaga.
 
 During my career I have been acquiring experience with a wide variaty of programming languages such as C, C++, Java, Python, Matlab, VHDL... and others that I have learnt for myself like GIT, PHP, HTML, CSS... Take a look of my lastest projects in the [blog](https://amayoo0.github.io/blog/) tab.
