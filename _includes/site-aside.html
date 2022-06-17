@@ -6,9 +6,11 @@
     </section>
 
   {% elsif page.layout == "page" or page.layout == "home" or page.layout == "blog" %}
-    <section class="section  section--description">
-      <h3>About this site</h3>
-      <p>{{ site.description }}</p>
+  <!--<section class="section  section--description">-->
+    <section class="section  section--related-posts">
+      <h3>About myself</h3>
+      <!-- <p>{{ site.description }}</p> -->
+      {% include figure.html image="https://raw.githubusercontent.com/Amayoo0/amayoo0.github.io/main/assets/face.jpeg" position="left" width="90" height="150" %}
       {% include nav-social.html %}
     </section>
 
