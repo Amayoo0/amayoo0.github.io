@@ -6,6 +6,7 @@ feature_text: |
   
 feature_image: "assets/22-1300x400-resize.jpg"
 excerpt: ""
+aside: true 
 ---
 {% include figure.html image="https://raw.githubusercontent.com/Amayoo0/amayoo0.github.io/main/assets/face.jpeg" position="left" width="90" height="150" %}
 
