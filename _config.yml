@@ -98,7 +98,7 @@ title: "Portfolio" # Site name or title, also used in jekyll-seo-tag
 logo: "/cyber-lab/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "Pesonal Portfolio" # Site description and default description, also used in jekyll-seo-tag
 url: "" # Site url, also used in jekyll-seo-tag
-baseurl: ""
+baseurl: "/cyber-lab"
 repo: ""
 email: "antoniomayov01@gmail.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
