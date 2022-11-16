@@ -123,15 +123,15 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 # 9. Site navigation
 navigation_header:
 - title: Home
-  url: /
+  url: /cyber-lab
 #- title: Elements
 #  url: /elements/
 - title: Blog
-  url: /blog/
+  url: /cyber-lab/blog/
 - title: Categories
-  url: /categories/
+  url: /cyber-lab/categories/
 - title: Search
-  url: /search/
+  url: /cyber-lab/search/
 
 navigation_footer:
 - title: Antonio Mayo Vegas
