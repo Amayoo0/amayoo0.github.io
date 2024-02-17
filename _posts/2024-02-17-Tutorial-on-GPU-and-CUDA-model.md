@@ -25,9 +25,6 @@ Thread blocks in a 'Thread Block Cluster' can perform read, write, and atomics o
 Connect to the UMA VPN and establish a *Remote Desktop Connection* to your server:
 
 ``` bash
-docker start keysuser3_dev_gemini
-docker exec -it keysuser3_dev_gemini bash
-cd my_share/KeysightTrack
 pip3 install -r requirements.txt
 source set_env.sh
 ```
