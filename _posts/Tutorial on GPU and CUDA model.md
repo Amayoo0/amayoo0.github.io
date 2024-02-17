@@ -1,12 +1,25 @@
+---
+title: Tutorial on GPU and CUDA model
+categories: CUDA GPU
+excerpt: | 
+   A tutorial on GPU parallel programming using the CUDA model.
+
+feature_text: |
+  ## Tutorial on GPU and CUDA model
+  
+feature_image: "https://picsum.photos/2560/600?image=733"
+image: "https://picsum.photos/2560/600?image=733"
+---
+
+
 ## Architecture
 
 The Graphic Processing Unit (GPU) is designed to work with parallelism mindset. CPU is designed to complete operations sequentially (this is what we call _thread_) and can execute tens of thread, while GPU can execute thousands of them.
-![[Pasted image 20240209201045.png]]
+
 ### Memory hierarchy
 
 Green block is called _Grid_ and is composed by Thread Blocks. Thread Block is a group of thread with shared memory. This group of thread is also called _warp_ and has 32 thread.
 Thread blocks in a 'Thread Block Cluster' can perform read, write, and atomics operations on each other's shared memory. Finally, all threads have access to the same global memory.
-![[Pasted image 20240209202053.png]]
 
 ## Development Environment Setup
 Connect to the UMA VPN and establish a *Remote Desktop Connection* to your server:
@@ -96,7 +109,6 @@ Output: $ ./build/src/tutorial/tutorial
 ```
 ## Exercise 2: ScalarProduct Sequentially
 
-![[Pasted image 20240210115510.png]]
 
 ./src/tutorial/test/main.cpp
 ``` C++
@@ -260,7 +272,6 @@ In this exercise we are going to use thread parallelism for computing scalar vec
 First exercise resolve this operation without parallelism and compute the result value with only one thread. What we are going to do now is to distribute the computational effort among many thread.  
 
 $$ \sum_{n=0}^{1024^2 - 1} x[n] \cdot y[n]  = \sum_{id=0}^{1024 - 1}\sum_{n=0}^{1024 - 1} x[id+1024\cdot n] \cdot y[id + 1024 \cdot n]$$
-![[Pasted image 20240210115408.png]]
 
 ./src/tutorial/test/main.cpp
 ``` C++
