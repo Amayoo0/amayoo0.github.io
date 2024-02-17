@@ -22,7 +22,7 @@ Green block is called _Grid_ and is composed by Thread Blocks. Thread Block is a
 Thread blocks in a 'Thread Block Cluster' can perform read, write, and atomics operations on each other's shared memory. Finally, all threads have access to the same global memory.
 
 ## Development Environment Setup
-Connect to the UMA VPN and establish a *Remote Desktop Connection* to your server:
+To utilize GPU-accelerated computing, having a local GPU on your computer is essential.
 
 ``` bash
 pip3 install -r requirements.txt
