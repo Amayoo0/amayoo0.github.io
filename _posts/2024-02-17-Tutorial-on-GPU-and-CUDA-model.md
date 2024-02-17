@@ -65,7 +65,7 @@ meson test -C build
 
 ## Exercise 1: HelloWorld
 ./src/tutorial/test/main.cpp
-``` C++
+``` python
 #include "helloWorld.cuh"
 int main(int argc, char **argv)
 {
@@ -76,7 +76,7 @@ int main(int argc, char **argv)
 ```
 
 ./src/tutorial/src/helloWorld.cu
-``` C++
+``` python
 #include <cuda.h>
 #include <cuda_fp16.h>
 #include <stdio.h>
@@ -111,7 +111,7 @@ Output: $ ./build/src/tutorial/tutorial
 
 
 ./src/tutorial/test/main.cpp
-``` C++
+``` python
 #include <iostream>
 #include <fstream>
 #include "cudaScalarProduct1.cuh"
@@ -166,7 +166,7 @@ int main(int argc, char **argv)
 ```
 
 ./src/tutorial/src/helloWorld.cu
-``` C++
+``` python
 #include <cuda.h>
 #include <cuda_fp16.h>
 #include <stdio.h>
@@ -271,10 +271,8 @@ In this exercise we are going to use thread parallelism for computing scalar vec
 
 First exercise resolve this operation without parallelism and compute the result value with only one thread. What we are going to do now is to distribute the computational effort among many thread.  
 
-$$ \sum_{n=0}^{1024^2 - 1} x[n] \cdot y[n]  = \sum_{id=0}^{1024 - 1}\sum_{n=0}^{1024 - 1} x[id+1024\cdot n] \cdot y[id + 1024 \cdot n]$$
-
 ./src/tutorial/test/main.cpp
-``` C++
+``` python
 #include <iostream>
 #include <fstream>
 //#include "cudaScalarProduct1.cuh"
@@ -329,7 +327,7 @@ int main(int argc, char **argv)
 ```
 
 ./src/tutorial/src/cudaScalarProduct2.cu
-``` C++
+``` python
 #include <cuda.h>
 #include <cuda_fp16.h>
 #include <stdio.h>
@@ -447,17 +445,17 @@ Output: ./build/src/tutorial/tutorial ./src/tutorial/data/tv_x.csv ./src/tutoria
 ## Homework: cudaVectorProjection 
 
 Implementing a kernel for computing the vector projection formula using any number of GPU blocks and threads. 
-$$z=\frac{x^T y}{y^T y} y$$
+
 Use all we have learnt in this tutorial:
 - Create your git branch and save there.
 - Remember to add new files that you create for compilation, e.g. cudaVectorProjection.cu in the meson build file.
-- Compute first scalar products $x^T y$, $y^T y$ using the kernels for scalar products then create a kernel that scales y with the scalar value ($\frac{x^T y}{y^T y}$).
+- Compute first scalar products x^T y, y^T y using the kernels for scalar products then create a kernel that scales y with the scalar value (x^T y/y^T)y.
 - Keep a similar coding style/structure (\*.cuh and \*cu file,  name spacing, variable naming, function naming…)
-- In main.cpp add a final check that checks the error $(z-z_{ref})^T (z-z_{ref})<1e^{-6}$ (the reference $z_{ref}$  is in the tv_z.csv file)
+- In main.cpp add a final check that checks the error (z-z_ref)^T (z-z_ref)<1e^(-6) (the reference z_ref  is in the tv_z.csv file)
 
 
 ./src/tutorial/test/main.cpp
-``` C++
+``` python
 #include <iostream>
 #include <fstream>
 // includes for vectorProjection1
@@ -541,7 +539,7 @@ int main(int argc, char **argv)
 ```
 
 ./src/tutorial/src/cudaVectorProjection2.cu
-``` C++
+``` python
 #include <cuda.h>
 #include <cuda_fp16.h>
 #include <stdio.h>
@@ -640,7 +638,7 @@ __host__ void cudaVP2::vectorProjection(float *x, float *y, float *z, int dim, f
 
 
 ./src/tutorial/inc/cudaVectorProjection2.cuh
-``` C++
+``` python
 #pragma once
 namespace cudaVP2
 {
